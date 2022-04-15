@@ -7,8 +7,4 @@ data class Commit(
     val author:String,
     val message:String,
     val files: List<CommitFile>)
-{
-    fun copyFiles(baseDir:File){
-        files.forEach { File(baseDir,it.fileName).copyTo(File(dirName,it.fileName))  }
-    }
-}
+

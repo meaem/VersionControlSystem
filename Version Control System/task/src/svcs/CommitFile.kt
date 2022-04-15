@@ -1,2 +1,5 @@
 package svcs
-data class CommitFile(val fileName: String, val hash: String)
+
+import java.io.File
+
+data class CommitFile(val file: String, val hash: String)
